@@ -1,0 +1,239 @@
+.header{
+    grid-area: header;
+    background-color:#425C81;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+}
+.mySlides > .logo{
+width: 150px;
+height: auto;
+position: absolute;
+z-index: 1;
+}
+.aSide{
+    grid-area: aSide;
+    background-color: #E4E4E4;
+    display: flex;
+    flex-direction: column;
+    color: #425C81;
+}
+.finder{
+    text-align: center;
+}
+.busqueda > h3{
+    margin: 0px;
+    padding: 0px;
+}
+.busqueda, .busqueda > p, .metros > p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+#cuartos{
+    color: #425C81;
+}
+.metros{
+    display: flex;
+}
+.metros > p >input{
+    width: 6rem;
+    margin: 3px;
+    color: #425C81;
+}
+.buscar{
+    color: #E4E4E4;
+    background:#425C81;
+    border-color: #E4E4E4;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 5px;
+}
+.main{
+    grid-area: main;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.propiedades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.houseCard{
+    width: 25%;
+    height: auto;
+    margin: 1rem;
+    border: 3px solid #425C81;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1%;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.houseCard > img{
+    width: 100%;
+    height: 10rem;
+}
+.houseCard > p{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+h2{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.info > span{
+    margin: 2px;
+}
+.total{
+    font-weight: bold;
+    color: #425C81;
+    padding-bottom: 2%;
+    border: 2px solid #425C81;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.footer{
+    grid-area: footer;
+    background-color: #425C81;
+    text-align: center;
+    color: #F2F2F2;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    'header header'
+    'aSide main'
+    'footer footer';
+    height: 100vh;
+    width: 100%;
+}
+.busquedaSinResultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #425C81;
+    font-weight: 700;
+}
+.busquedaSinResultado > img{
+    height: 20rem;
+    width: auto;
+}
+/* QUITA FLECHAS A INPUT TYPE = NUMBER */
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+input[type=number] {
+
+    -moz-appearance:textfield;
+
+}
+/* CARROUSEL */
+* {box-sizing: border-box;}
+.mySlides {
+    display: none;
+    height: 300px;
+}
+.fade img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.active {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
