@@ -1,16 +1,20 @@
 .header{
     grid-area: header;
-    background-color:#425C81;
+    background-color:#0063DB;
     text-align: center;
     justify-content: space-between;
     width: 100%;
     height: 300px;
 }
-.mySlides > .logo{
+.logo{
 width: 150px;
 height: auto;
 position: absolute;
+right: 89%;
 z-index: 1;
+/* background-color: #E4E4E4; */
+/* border-radius: 120px; */
+padding: 10px;
 }
 .aSide{
     grid-area: aSide;
@@ -61,10 +65,10 @@ z-index: 1;
 .propiedades{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .houseCard{
-    width: 25%;
+    width: 300px;
     height: auto;
     margin: 1rem;
     border: 3px solid #425C81;
@@ -79,6 +83,7 @@ z-index: 1;
 .houseCard > img{
     width: 100%;
     height: 10rem;
+    border-radius: 6px 6px 0 0;
 }
 .houseCard > p{
     padding-left: 3%;
